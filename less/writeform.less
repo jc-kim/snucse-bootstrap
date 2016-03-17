@@ -1,0 +1,46 @@
+#WriteFormWrapper {
+  .FieldHeader {
+    line-height: 30px;
+  }
+  .BoardWriteForm ul li {
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  #toolbar {
+    width: auto;
+    background: #eee;
+    padding: 4px;
+    ul {
+      margin-left: 0;
+    }
+    li * {
+      vertical-align: top;
+    }
+  }
+  input[type=text] {
+    .textboxize();
+    float: right;
+    width: calc(~"100% - 90px");
+    margin: 0;
+  }
+  #WriteFormContent {
+    .textboxize();
+    float: right;
+    width: calc(~"100% - 90px");
+    height: 400px;
+    margin-top: 1px;
+    font-size: 13px;
+  }
+  .FileHeader,.FileList {
+    width: auto;
+  }
+  .LinkButton {
+    .buttonize();
+  }
+
+  #WriteFormSubmit {
+    margin-top: 20px;
+    margin-left: 100px;
+    text-align: right;
+  }
+}

@@ -303,11 +303,17 @@ ul.Comment {
     }
   }
 }
+
+ul.Comment .CommentAddForm .TextBox {
+  width: calc(~"100% - 200px");
+  margin-bottom: 0;
+}
 #CommentWriteWrapper {
   .wellize();
   margin-bottom: 10px;
+  overflow: hidden;
   .RefreshComment {
-    float: none;
+    float: left;
     display: inline-block;
     a {
       padding-left: 1px;
@@ -322,14 +328,17 @@ ul.Comment {
     }
   }
   .CommentAddForm {
-    display: inline-block;
+    float: left;
+    display: block;
+    width: calc(~"100% - 115px");
     .TextBox {
       background-color: @white;
       margin-bottom: 0px;
-      width: 280px;
+      width: calc(~"100% - 120px");
     }
   }
 }
+
 #ArticleController {
   padding: 0px 10px;
   background: transparent;

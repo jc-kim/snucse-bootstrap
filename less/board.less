@@ -291,11 +291,24 @@ ul.Comment {
     }
   }
 }
-
-ul.Comment .CommentAddForm .TextBox {
-  width: calc(~"100% - 200px");
-  margin-bottom: 0;
+.CommentAddForm {
+  display: block;
+  width: calc(~"100% - 115px");
+  label,input[type='submit'] {
+    vertical-align: super;
+  }
+  .TextBox {
+    background-color: @white;
+  }
+  [name='content'] {
+    //margin-bottom: 0px;
+    width: calc(~"100% - 120px");
+  }
+  .FormCancel {
+    float: right;
+  }
 }
+
 #CommentWriteWrapper {
   .wellize();
   margin-bottom: 10px;
@@ -317,13 +330,6 @@ ul.Comment .CommentAddForm .TextBox {
   }
   .CommentAddForm {
     float: left;
-    display: block;
-    width: calc(~"100% - 115px");
-    .TextBox {
-      background-color: @white;
-      margin-bottom: 0px;
-      width: calc(~"100% - 120px");
-    }
   }
 }
 

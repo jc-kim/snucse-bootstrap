@@ -6,7 +6,7 @@
   right: 0;
   left: 0;
   margin: 0px;
-  padding: 0px;
+  padding: 0 calc(~'50% - 625px');
   z-index: @zindexFixedNavbar;
   border-bottom-width: 0px;
 
@@ -30,10 +30,10 @@
   }
 }
 #CommonLogo {
-  margin: 0px;
-  margin-left: @navbarHeight / 2;
+  width: 80px;
+  height: 40px;
+  margin: 0 20px 0 0;
   a {
-    top: 2px;
     position: absolute;
     img {
       display: none;
@@ -46,9 +46,9 @@
   }
 }
 #CommonMenu {
+  float: left;
   background: none;
-  position: absolute;
-  left: 130px;
+  clear: none;
   li a {
     padding: 6px;
   }
@@ -105,6 +105,12 @@
   padding: 0px;
   border: 0px;
 }
+
+@media (max-width: 970px) {
+  #CommonUser {
+    display: none;
+  }
+}
 #CommonUser > ul > li:nth-child(1) a {
   .iconize('http://klassmating-thefron.s3.amazonaws.com/snucse_bootstrap/icons.png', 28px, -5);
 }
@@ -134,7 +140,6 @@
   top: @navbarHeight;
   right: 0;
   left: 0;
-  margin: 0px;
   padding: 0px 20px;
   z-index: @zindexFixedNavbar;
   border-bottom: 1px solid #d5d5d5;
@@ -146,7 +151,8 @@
   .box-shadow(@shadow);
 
   ul {
-    margin: 0;
+    max-width: 1250px;
+    margin: 0 auto;
   }
   li {
     height: auto;
